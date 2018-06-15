@@ -1,10 +1,33 @@
-\title{}
+\documentclass[
+12pt,
+a4paper,
+]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\input{theorems}
+\input{macros}
+
+\title{Título}
+\author{Marco Antônio Habitzreuter}
 \date{\today}
 
-\documentclass[12pt]{article}
-
 \begin{document}
-\maketitle
 
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\include{sections/section1}
 
 \end{document}

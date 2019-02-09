@@ -3,8 +3,12 @@
 # possible alternative: https://github.com/natlownes/docker-latex
 image: blang/latex
 
+before_script:
+  - apt install gnuplot
+
 build:
   script:
+    - gnuplot *.gnuplot
     - latexmk -pdf main.tex
   artifacts:
     paths:
